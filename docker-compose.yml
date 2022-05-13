@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  service:
+    image: "${IMAGE_REPOSITORY}/${IMAGE_NAME}"
+    ports:
+      - "8000:8000" 
+    volumes:
+      - ./src:/usr/src/app/src
